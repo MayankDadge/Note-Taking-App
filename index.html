@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes making website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">TakeNotes - By Mayank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+    </nav>
+    <div class="head container">
+    <h1 id="dateinback"></h1>
+    <H1 id="dateinback"><br>A NOTE TAKING WEB APPLICATION</H1>
+    <img class="background"src="daytime.jpg" alt="Daytime illustration" width="100%">
+    </div>
+  </header>
+
+    <div class="container my-3">
+        <div id="writehere" class="card">
+            <div class="card-body">
+              <h3 id="addanote"class="card-title">ADD A NOTE <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </h3>
+              <div class="form-group">
+                <textarea onkeypress="colorflip()" class="form-control" id="addTxt" rows="4"></textarea>
+              </div>
+              <button class="btn btn-primary" id="addBtn"><i class="fa fa-plus"></i> ADD</button>
+              <button class="btn btn-primary" id="coloron"><i class="fa fa-plus"></i> COLOR EFFECT ON</button>
+              <button class="btn btn-primary" id="coloroff"><i class="fa fa-plus"></i> OFF</button>
+            </div>
+        </div>
+        <hr>
+        <h1 id="yournote">Your notes</h1><button class="btn btn-primary" id="newnote"><i class="fa fa-plus"></i> NEW NOTE</button>
+
+        <hr>
+
+        <div id="notes" class="row container-fluid">
+            
+        </div>
+    </div>
+    
+    
+    
+    
+    <script src="notes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
